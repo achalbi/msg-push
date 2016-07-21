@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My Book List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg">
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+  <ion-card>
+      <img src="{{item.img_type}}">
+     <ion-card-content>
+      <h2 class="card-title">
+        <ion-icon name="{{item.icon}}" item-left></ion-icon>
+        {{item.title}}
+      </h2>
+      <p>
+        {{item.note}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+    </button>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+</ion-content>
