@@ -10,8 +10,9 @@
   <ion-content padding class="content-stable chat"
                  on-swipe-left="hideTime = false"
                  on-swipe-right="hideTime = true">
-      <ol class="p-0">
-        <div>
+    <ion-footer>
+      <ol class="p-0 bottom-0">
+        <div position="bottom">
 
         <li *ngFor="let state of states" class="{{state.sent_by}}" >
           <div class="msg">
@@ -25,11 +26,11 @@
         </li>
         </div>
       </ol>
+    </ion-footer>
 
     </ion-content>
 
-<!--     <ion-footer>
-    <ion-toolbar position="bottom">
+<!--     <ion-toolbar position="bottom">
       <ion-row center>
         <ion-col width-80>
           <ion-item> 
@@ -44,5 +45,4 @@
           </div>
         </ion-col>
       </ion-row>      
-    </ion-toolbar>
-    </ion-footer> -->
+    </ion-toolbar> -->

@@ -1,0 +1,74 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\achal-pc\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.8.0
+3 info using node@v5.7.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData @angular/router
+20 silly mapToRegistry name @angular/router
+21 silly mapToRegistry scope (from package name) @angular
+22 verbose mapToRegistry no registry URL found in name for scope @angular
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/@angular%2frouter
+26 verbose request uri https://registry.npmjs.org/@angular%2frouter
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 4:51:19 PM
+29 verbose request id 8f315d9d91f6cbf7
+30 http request GET https://registry.npmjs.org/@angular%2frouter
+31 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.8.162:443
+32 info attempt registry request try #2 at 4:51:51 PM
+33 http request GET https://registry.npmjs.org/@angular%2frouter
+34 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.8.162:443
+35 info attempt registry request try #3 at 4:53:12 PM
+36 http request GET https://registry.npmjs.org/@angular%2frouter
+37 silly fetchPackageMetaData Error: connect ETIMEDOUT 151.101.8.162:443
+37 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:856:11)
+37 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:879:20)
+37 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1057:14)
+37 silly fetchPackageMetaData  error for @angular/router@^2.0.0-rc.2 { [Error: connect ETIMEDOUT 151.101.8.162:443]
+37 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+37 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+37 silly fetchPackageMetaData   syscall: 'connect',
+37 silly fetchPackageMetaData   address: '151.101.8.162',
+37 silly fetchPackageMetaData   port: 443 }
+38 silly rollbackFailedOptional Starting
+39 silly rollbackFailedOptional Finishing
+40 silly runTopLevelLifecycles Starting
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 verbose stack Error: connect ETIMEDOUT 151.101.8.162:443
+43 verbose stack     at Object.exports._errnoException (util.js:856:11)
+43 verbose stack     at exports._exceptionWithHostPort (util.js:879:20)
+43 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1057:14)
+44 verbose cwd D:\ionic\msg-push
+45 error Windows_NT 10.0.10586
+46 error argv "C:\\Program Files (x86)\\nodejs\\node.exe" "C:\\Users\\achal-pc\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install"
+47 error node v5.7.1
+48 error npm  v3.8.0
+49 error code ETIMEDOUT
+50 error errno ETIMEDOUT
+51 error syscall connect
+52 error network connect ETIMEDOUT 151.101.8.162:443
+53 error network This is most likely not a problem with npm itself
+53 error network and is related to network connectivity.
+53 error network In most cases you are behind a proxy or have bad network settings.
+53 error network
+53 error network If you are behind a proxy, please make sure that the
+53 error network 'proxy' config is set properly.  See: 'npm help config'
+54 verbose exit [ 1, true ]

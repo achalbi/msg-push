@@ -23,7 +23,7 @@ export class MsgPushPage {
   constructor(private nav: NavController,private navParams: NavParams, private msgPushService: MsgPushService) {
     //this.state = navParams.get('evt');
     this.storage = new Storage(SqlStorage);
-    //this.storage.clear();
+    this.storage.clear();
     this.storage.get('states').then((data) => {
                 if (data != null) {
                   this.states = JSON.parse(data);
